@@ -6,19 +6,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Title</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="main.css">
     <link rel="javasheet" href="main.js">
 </head>
 
 <body>
-    <table style="width:100%">
+    <form>
+    <table id="calcButtons" style="width:100%" align="center">
         <tr>
-            <td>
-                <button type="button">C</button>
-            </td>
+            <td><input type="button" name="clear" value="C" onclick="calcDisplayValue += 'C'"></td>
+                <td colspan="3"></td>
             <tr>
-                <td><button type="button">7</button></td>
+                <td><input type="button" name="seven" value="7" onclick="calcDisplayValue += '7'"></td>
                 <td><button type="button">8</button></td>
                 <td><button type="button">9</button></td>
                 <td><button type="button">/</button></td>
@@ -42,5 +42,6 @@
             </tr>
         </tr>
     </table>
+</form>
    
 </body>
